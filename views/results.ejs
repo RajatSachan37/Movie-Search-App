@@ -1,0 +1,64 @@
+<style>
+	#image{
+		margin-left: 65%;
+		border: white 5px solid;
+	}
+	body{
+		color: red;
+		background-color: black;
+	}
+	h1{
+		text-align: center;
+	}
+	strong{
+		margin-bottom: 5%;
+		font-size: 50px;
+	}
+	#button{
+		margin-left: 45%;
+		width: 12%;
+	}
+	p{
+		text-align: center;
+	}
+	#year{
+		font-size: 25px;
+	}
+	ol{
+		margin-left:2%;
+		font-size: 50px;
+	}
+	
+</style>
+
+<body>
+	<h1>
+	Search Results :
+</h1>
+<ol>
+	
+
+
+<%  data["Search"].forEach(function(movie){ %>
+	
+	<li>
+		 <strong><%= movie["Title"] %>:-</strong>  <br><div id="year">
+		(Year: <%=movie["Year"]%>)
+		</div>
+	</li>
+	
+	<img id="image" src=<%=movie["Poster"]%> > 
+	<hr>
+	
+<% }) %>
+	</ol>
+
+<a href = "/"><button id ="button" >
+		Go Back
+	</button></a>
+	<p>
+		(c)RJ 2020
+		
+	</p>
+	
+</body>
