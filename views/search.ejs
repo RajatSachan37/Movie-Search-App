@@ -1,10 +1,16 @@
+<html>
+	
+<head>
+	<title>Movie Search</title>
+	
 <style>
 	body{
 		background-image: url('https://i.pinimg.com/originals/be/2a/7a/be2a7a01262b6e5ab091eee86aa87ead.jpg');
 		text-align: center;
+		width: 100%
 		
 	}
-	h1{
+	#header{
 		margin-top: 5%;
 		color: red;
 		
@@ -15,13 +21,14 @@
 	}
 	#search{
 		width: 25%;
-		
+		margin: 0 auto;
+    float: none;
 			margin-top: 1%;
 	}
 	.input{
 		margin-top: 50px;
 	}
-	div{
+	#d{
 		background: black;
 		/* margin-left: 25%;
 		margin-right: 25%; */
@@ -31,30 +38,39 @@
 		margin-top: 1%;
 		width: 25%;
 	}
-	p{
+	#p{
+		
 		color: red;
 		text-align: center;
+		margin: 10 0 10;
 	}
 	
 </style>
+	</head>
 	
 <!-- <div style="text-align: center;">
 	
 <div style="background: black;"> -->
-<body>
-	<div>
-		<h1 >
-	 Movie Search:
+<body >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<div id="d">
+		<h1 id="header" >
+	 Movie Search
 </h1>
-
+		<div class="form-group">	
 <form id="form" action = "/results" method="GET">
-	<input id="search" type = "text" placeholder = "Search a Movie" name="search"><br>
-	<input id="submit" type="submit" >
+	<input id="search" type = "text" placeholder = "Search a Movie" name="search" class="form-control" required><br>
+	<input id="submit" type="submit" class="btn btn-danger active" value="Search">
+	
 	<p id ="p">
-		(c)RJ 2020
+		(c) RJ 2020
 	</p>
 </form>
+			
+			</div>
+		
 	</div>
 	
 	</body>
+	</html>
 	
