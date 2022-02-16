@@ -28,6 +28,6 @@ app.get("*", function (req, res) {
   res.send("Nothing Found Go Back!");
 });
 
-app.listen(3000, process.env.IP, function () {
+app.listen(process.env.PORT, process.env.IP, function () {
   console.log("Movie App has started!");
 });
