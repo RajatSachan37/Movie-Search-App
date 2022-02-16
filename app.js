@@ -3,6 +3,8 @@ var app = express();
 var request = require("request");
 app.set("view engine", "ejs");
 
+app.use(express.static(__dirname + "/public"));
+
 app.get("/", function (req, res) {
   res.render("search");
 });
@@ -26,6 +28,6 @@ app.get("*", function (req, res) {
   res.send("Nothing Found Go Back!");
 });
 
-app.listen(process.env.PORT, process.env.IP, function () {
+app.listen(3000, process.env.IP, function () {
   console.log("Movie App has started!");
 });

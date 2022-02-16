@@ -1,0 +1,42 @@
+#image {
+  margin-left: 65%;
+  border: white 5px solid;
+}
+body {
+  color: red;
+  background: black;
+}
+#b {
+  color: red;
+  background: black;
+}
+h1 {
+  text-align: center;
+}
+strong {
+  margin-bottom: 5%;
+  font-size: 50px;
+}
+#button {
+  /* margin-left: 45%;
+		width: 12%; */
+  /* text-align: center; */
+  /* align: center; */
+  margin: 0 auto;
+  width: 25%;
+}
+p {
+  text-align: center;
+  margin: 10 0 10;
+}
+#year {
+  font-size: 25px;
+}
+ol {
+  margin-left: 2%;
+  font-size: 50px;
+}
+#c {
+  text-align: center;
+  margin: 10 0 10;
+}

@@ -2,8 +2,10 @@
 	<head>
 		
 	<title>Search Results</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/results.css">
 
-<style>
+<!-- <style>
 	#image{
 		margin-left: 65%;
 		border: white 5px solid;
@@ -47,11 +49,10 @@
 		margin: 10 0 10;
 	}
 	
-</style>
+</style> -->
 		</head>
 
 <body id="b">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<h1>
 	Search Results
 </h1>
@@ -62,7 +63,7 @@
 <%  data["Search"].forEach(function(movie){ %>
 	
 	<li>
-		 <strong><%= movie["Title"] %></strong>  <br><div id="year">
+		 <%= movie["Title"] %>  <br><div id="year">
 		(Year: <%=movie["Year"]%>)
 		</div>
 	</li>
